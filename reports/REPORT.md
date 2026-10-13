@@ -79,7 +79,7 @@ Burn-rate tạo 3 page và 1 ticket, với 0 false page; naive tạo 7 page, 3 f
 
 ## 6. Postmortem — Băng G2 với client naive (blameless)
 
-![G2 attempts and rolling success ratio](reports/G2_overload_storm.png)
+![G2 attempts and rolling success ratio](G2_overload_storm.png)
 
 **Tóm tắt (3 câu):** Từ t=120, alpha mất 75% năng lực GPU, trong khi `NaiveClient` vẫn chạy ba tầng retry, tổng cộng tối đa 36 attempt/call, với delay cố định. Trong G2, hệ thống tạo 34,475 attempt cho 3,481 logical call (amplification 9.904), và chỉ hoàn thành 1,077/2,362 turn (availability 45.60%). Provider khôi phục ở t=300 nhưng success ratio không đạt 95% liên tục trong 30 s cho đến t=455, nên recovery debt kéo dài thêm 155 s.
 
