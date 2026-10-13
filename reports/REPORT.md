@@ -1,6 +1,6 @@
 # Lab 25B — Report
 
-**Họ tên / nhóm:** Nguyễn Tiến Đạt - 2A202602606  **Commit:** 43a3b2d  **Điểm tự động (make grade):** 84 / 88 ở máy local
+**Họ tên / nhóm:** Nguyễn Tiến Đạt - 2A202602606  **Commit:** 43a3b2d  **Điểm tự động (make grade):** 84 / 88
 
 > Bốn điểm E còn lại chạy trên dữ liệu SLO ẩn của giảng viên; toàn bộ 82/82 unit test, dữ liệu SLO public, 6/6 Game Day, workflow và cache tape đều PASS.
 
